@@ -1,0 +1,36 @@
+ * {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body.bg {
+    margin: 0;
+    height: 100vh;
+    background: url("./imagenes/Color_negro.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(47, 44, 44, 0.75); 
+    z-index: 1;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 14px;
+    border-radius: 20px;
+    border: 1px solid #3f3939;
+}
+
+button {
+    background: #1405b7;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+}

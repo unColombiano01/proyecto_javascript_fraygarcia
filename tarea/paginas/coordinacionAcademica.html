@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir</title>
+    <link rel="stylesheet" href="../styles_general.css">
+    <link rel="stylesheet" href="../styles/añadir.css">
+</head>
+<body class="bg">
+<div class="add-container">
+
+    <header class="add-header">
+      <a href="../carga/cargaMenu.html">← Volver</a>
+      <h1>Añadir Proyecto</h1>
+      <img src="../imgs/logo.svg" class="logo">
+    </header>
+  
+    <form class="add-card">
+  
+      <h2>Información del Indicador</h2>
+  
+      <div class="grid">
+        <label>
+          Indicador
+          <input type="text">
+        </label>
+  
+        <label>
+          Categoría
+          <select>
+            <option>Baja</option>
+            <option>Media</option>
+            <option>Alta</option>
+          </select>
+        </label>
+  
+        <label>
+          Área
+          <select>
+            <option>Marketing</option>
+            <option>Ventas</option>
+          </select>
+        </label>
+  
+        <label>
+          Frecuencia
+          <select>
+            <option>Mensual</option>
+            <option>Trimestral</option>
+          </select>
+        </label>
+      </div>
+  
+      <label>
+        Descripción
+        <input type="text">
+      </label>
+  
+      <div class="dates">
+        <label>Inicio <input type="date"></label>
+        <label>Fin <input type="date"></label>
+      </div>
+  
+      <label>
+        Cumplimiento (%)
+        <input type="number" min="0" max="100">
+      </label>
+  
+      <div class="actions">
+        <a href="../logins/carga_panel.html" class="cancel">Cancelar</a>
+
+        <input type="checkbox" id="toggle-alerta" hidden>
+            <label for="toggle-alerta" class="btn">
+              Guardar
+            </label>
+
+            <div class="alerta alerta-exito">
+              ✔ Datos guardados correctamente
+            </div>
+      </div>
+  
+    </form>
+  </div>
+
+</body>
+</html>

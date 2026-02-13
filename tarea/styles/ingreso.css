@@ -1,0 +1,17 @@
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(78, 72, 72);
+    width: 430px;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    z-index: 2;
+}
+
+.logo {
+    width: 400px;
+    margin-bottom: 10px;
+}
