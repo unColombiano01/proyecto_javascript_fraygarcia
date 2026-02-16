@@ -1,0 +1,165 @@
+Styles · CSS
+Copiar
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1d24;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.info-button {
+    background-color: #2d3139;
+    color: #a8adb7;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.info-button:hover {
+    background-color: #363a44;
+}
+
+.module {
+    background-color: #23262e;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.module-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #2d3139;
+}
+
+.module-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.module-icon {
+    width: 24px;
+    height: 24px;
+    color: #a8adb7;
+}
+
+.session {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #2d3139;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: background-color 0.3s;
+}
+
+.session:hover {
+    background-color: #363a44;
+}
+
+.session-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+}
+
+.session-number {
+    color: #a8adb7;
+    font-weight: 500;
+}
+
+.status-check {
+    width: 20px;
+    height: 20px;
+    background-color: #10b981;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.status-check::after {
+    content: '✓';
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.session-date {
+    color: #d1d5db;
+    font-size: 14px;
+    min-width: 120px;
+}
+
+.session-time {
+    color: #d1d5db;
+    font-size: 14px;
+    min-width: 80px;
+}
+
+.session-duration {
+    color: #d1d5db;
+    font-size: 14px;
+    min-width: 80px;
+}
+
+.session-button {
+    background-color: #3d4149;
+    color: #d1d5db;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.3s;
+}
+
+.session-button:hover {
+    background-color: #4a4f59;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .session {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .session-title {
+        grid-column: 1 / -1;
+    }
+}

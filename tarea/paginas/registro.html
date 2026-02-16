@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Registro</title>
-<link rel="stylesheet" href="../style.css">
-<link rel="stylesheet" href="../styles/registros.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusLands - Gestión Académica</title>
+    <link rel="stylesheet" href="../styles/registros.css">
+        <link rel="stylesheet" href="../styles/menu.css">
 </head>
-<body class="bg">
+<body>
+    <header>
 
-<div class="overlay"></div>
-
-<div class="card">
     <img src="../imagenes/images.png" class="logo">
+    <div class="header-title">Portal del Horario</div>
+    <div class="header-right">
+    </div>
 
-    <h2><br><b>REGISTRO DE INSCRIPCION</b></h2>
-    <p>Ingresar los datos</p>
+        <nav>
+            <button onclick="showSection('registro')">Registro Campers</button>
+            <button onclick="showSection('coordinacion')">Coordinación (Notas)</button>
+            <button onclick="showSection('reportes')">Reportes</button>
+        </nav>
 
-    <form action="../logins/carga_welcom.html">
-        <label>Nombres</label>
-        <input type="text" required>
+    <div class="profile-icon">
+    <img src="../imagenes/favicon (5)/favicon.ico" class="logo">
+    </div>
+    </header>
 
-        <label>Apellidos</label>
-        <input type="password" required>
+    <main id="content">
+        <section id="registro" class="active">
+            <h2>Registro de Nuevo Camper</h2>
+            <form id="form-camper">
+                <input type="text" id="id" placeholder="ID Identificación" required>
+                <input type="text" id="nombres" placeholder="Nombres" required>
+                <input type="text" id="apellidos" placeholder="Apellidos" required>
+                <input type="text" id="direccion" placeholder="Dirección">
+                <input type="text" id="acudiente" placeholder="Acudiente">
+                <input type="tel" id="telCel" placeholder="Celular">
+                <input type="tel" id="telFijo" placeholder="Teléfono Fijo">
+                <button type="submit">Inscribir Camper</button>
+            </form>
+        </section>
 
-        <label>Direccion</label>
-        <input type="text" required>
+        <section id="coordinacion">
+            <h2>Panel de Coordinación - Aprobar Ingreso</h2>
+            <div id="lista-inscritos">
+                </div>
+        </section>
 
-        <label>Acudiente</label>
-        <input type="password" required>   
+        <section id="reportes">
+            <h2>Módulo de Reportes</h2>
+            <div class="grid-reportes">
+                <button onclick="reporteInscritos()">Campers Inscritos</button>
+                <button onclick="reporteAprobados()">Campers que Aprobaron examen</button>
+                <button onclick="reporteBajoRendimiento()">Bajo Rendimiento (Riesgo)</button>
+            </div>
+            <div id="display-reporte"></div>
+        </section>
 
-        <label>Telefonos de contacto "fijo y celular"</label>
-        <input type="text" required>
+                <div class="sidebar">
+            <a href="../paginas/menu.html" class="menu-item active">
+               <span class="menu-text"> Volver </span>
+            </a>
 
-        <label>Estado "en proceso, inscrito, aprobado, etc.."</label>
-        <input type="password" required>  
+    </main>
 
-        <label>Riesgo</label>
-        <input type="text" required>
-
-        <label>Numero de Identificacion</label>
-        <input type="password" required>  
-
-        <button type="submit">Ingresar al <menu></menu></button>
-    </form>
-</div>
-
+    <script src="../javascript/script.js"></script>
 </body>
 </html>

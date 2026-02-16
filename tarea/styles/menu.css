@@ -13,7 +13,7 @@ body {
 }
 
 /*HEADER*/
-.header {
+.header {  
     background: #000000;
     padding: 1rem 2rem;
     display: flex;
@@ -81,7 +81,7 @@ body {
 /* SIDEBAR */
 .sidebar {
     width: 250px;
-    background: #25282f;
+    background: #2b2e35;
     padding: 1.5rem 0;
     border-right: 1px solid #2d3139;
 }
@@ -91,7 +91,7 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 0.9rem 1.5rem;
-    color: #9ca3af;
+    color: #f2f5fa;
     text-decoration: none;
     transition: all 0.2s;
     cursor: pointer;
@@ -104,7 +104,7 @@ body {
 
 .menu-item.active {
     background: #6366f1;
-    color: #fff;
+    color: #ffffff;
     border-radius: 0.5rem;
     margin: 0 1rem;
     padding-left: 1rem;
