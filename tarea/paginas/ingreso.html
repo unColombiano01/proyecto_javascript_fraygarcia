@@ -2,30 +2,43 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ingreso</title>
 <link rel="stylesheet" href="../style.css">
-<link rel="stylesheet" href="../styles/registros.css">
+<link rel="stylesheet" href="../styles/ingreso.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="stylesheet" href="../styles/menu.css"
 </head>
 <body class="bg">
 
-<div class="overlay"></div>
-
-<div class="card">
+   <div class="container">
+        <div class="form-content">
     <img src="../imagenes/images.png" class="logo">
+            <form>
+             <div class="input-group">
+                <div class="input-field" id="nameInput">
+                    <i class="fa-solid fa-user" ></i>
+                    <input type="text" placeholder="Rango">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope" ></i>
+                    <input type="email" placeholder="Correo">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock" ></i>
+                    <input type="password" placeholder="Contraseña"> 
+                </div>
+                </div>
+            <div class="sidebar">
+            <a href="../paginas/menu.html" class="menu-item active">
+               <span class="menu-text"> Ingresar </span>
+            </a>
+            </div>
+            </div>
+            </form>
+        </div>
+    </div>
 
-    <h2><br><b>REGISTRO</b></h2>
-    <h3>Ingresar tus datos</h3>
-
-    <form action="../logins/carga_welcom.html">
-        <label>Usuario</label>
-        <input type="text" required>
-
-        <label>Contraseña</label>
-        <input type="password" required> 
-        
-        <button type="submit">Ingresar al panel</button>
-    </form>
-</div>
-
+    <script src="script.js" ></script>
 </body>
 </html>

@@ -84,4 +84,4 @@ function mostrarReporte(titulo, data) {
     });
     html += `</ul>`;
     display.innerHTML = html;
-}
+} 
