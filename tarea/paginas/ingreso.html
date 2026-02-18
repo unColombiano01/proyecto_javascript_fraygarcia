@@ -4,41 +4,66 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ingreso</title>
-<link rel="stylesheet" href="../style.css">
 <link rel="stylesheet" href="../styles/ingreso.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-<link rel="stylesheet" href="../styles/menu.css"
 </head>
 <body class="bg">
 
-   <div class="container">
-        <div class="form-content">
-    <img src="../imagenes/images.png" class="logo">
-            <form>
-             <div class="input-group">
-                <div class="input-field" id="nameInput">
-                    <i class="fa-solid fa-user" ></i>
-                    <input type="text" placeholder="Rango">
-                </div>
-                <div class="input-field">
-                    <i class="fa-solid fa-envelope" ></i>
-                    <input type="email" placeholder="Correo">
-                </div>
-                <div class="input-field">
-                    <i class="fa-solid fa-lock" ></i>
-                    <input type="password" placeholder="Contraseña"> 
-                </div>
-                </div>
-            <div class="sidebar">
-            <a href="../paginas/menu.html" class="menu-item active">
-               <span class="menu-text"> Ingresar </span>
-            </a>
-            </div>
-            </div>
-            </form>
-        </div>
+  <div class="blob"></div>
+
+  <div class="card">
+    <div class="logo-area">
+      <div class="logo-icon">
+      </div>
+     <img src="../imagenes/images.png" class="logo">
     </div>
 
-    <script src="script.js" ></script>
+    <form id="loginForm" novalidate>
+
+      <div class="field">
+        <label>Usuario</label>
+        <input type="email" id="email" placeholder="correo@ejemplo.com" autocomplete="email">
+        <span class="error-msg" id="emailErr">Ingresa un correo válido.</span>
+      </div>
+
+      <div class="field">
+        <label>Contraseña</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" placeholder="••••••••" autocomplete="current-password">
+          <button type="button" class="toggle-pw" id="togglePw" aria-label="Mostrar contraseña">
+            <svg id="eyeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </button>
+        </div>
+        <span class="error-msg" id="pwErr">La contraseña es requerida</span>
+        <div class="strength-bar" id="strengthBar">
+          <span id="s1"></span>
+          <span id="s2"></span>
+          <span id="s3"></span>
+          <span id="s4"></span>
+        </div>
+        <div class="strength-label" id="strengthLabel"></div>
+      </div>
+
+      <div class="field">
+        <label>Rol</label>
+        <div class="select-wrapper">
+          <select id="rol">
+            <option value="">Seleccione su rol</option>
+            <option value="camper">Camper</option>
+            <option value="trainer">Trainer</option>
+            <option value="coordinador">Coordinador</option>
+          </select>
+        </div>
+        <span class="error-msg" id="rolErr">Selecciona un rol por favor</span>
+      </div>
+
+      <button class="btn" type="submit"> INGRESAR </button>
+
+    </form>
+  </div>
+
+    <script src="../javascript/script2.js" ></script>
 </body>
 </html>
